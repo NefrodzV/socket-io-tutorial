@@ -12,6 +12,7 @@ app.get('/', (req, res) => {
 })
 
 io.on('connection', (socket) => {
+    console.log(socket)
     console.log("A user has connected")
     // recieving when someone send a chat message
     
